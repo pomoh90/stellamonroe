@@ -6,16 +6,18 @@ import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import 'aos/dist/aos.css';
 import AOS from 'aos';
-import { Roboto } from 'next/font/google';
+import { Mali } from 'next/font/google';
 import { Playfair_Display } from 'next/font/google';
 import { Lora } from 'next/font/google';
+import { Sacramento } from 'next/font/google';
 import Logo from './components/Logo';
 import { contactInfo } from './components/info';
 import Popup from './components/pop';
 
-const roboto = Roboto({ subsets: ['latin'], weight: ['400', '700'] });
+const mali = Mali({ subsets: ['latin'], weight: ['200', '300', '400', '700'] });
 const playfair = Playfair_Display({ subsets: ['latin'], weight: ['400', '700'] });
 const lora = Lora({ subsets: ['latin'], weight: ['400', '700'] });
+const sacramento = Sacramento({ subsets: ['latin'], weight: '400' });
 
 const images = [
   '/images/photo1.jpg',
@@ -92,12 +94,13 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="keywords" content="Stella Monroe, escort services, luxury, companionship, exclusive connections" />
         <meta name="author" content="Stella Monroe" />
-        <link rel="icon" href="/images/favicon-heart.png" type="image/png" />
+        <link rel="icon" href="/favicon.png" type="image/png" />
       </Head>
 
       <div
-        className={`${styles.container} ${lora.className} ${!popupClosed ? 'page-blurred' : ''}`}
+        className={`${styles.container} ${mali.className} ${!popupClosed ? 'page-blurred' : ''}`}
         style={{
+          fontWeight: 200,
           backgroundColor: '#1e1e1e',
           color: '#f0f0f0',
           overflowX: 'hidden',
@@ -108,10 +111,10 @@ export default function Home() {
         }}
       >
         <header className={styles.header} style={{ textAlign: 'center' }}>
-          <h1 className={playfair.className} style={{ color: '#d6ac66', fontFamily: 'cursive' }}>
+          <h1 className={sacramento.className} style={{ color: '#d6ac66' }}>
            Stella Monroe
           </h1>
-          <p className={lora.className}>
+          <p className={mali.className}>
             Your trusted partner for exclusive connections
           </p>
         </header>
@@ -205,10 +208,13 @@ export default function Home() {
           style={{ maxWidth: '800px', margin: '0 auto', display: 'grid', gridTemplateColumns: '1fr 1fr', gridTemplateRows: 'auto auto', gap: '20px' }}
         >
           <div data-aos="fade-right" style={{ gridColumn: '1 / -1', textAlign: 'left' }}>
-            <h2
-              className={playfair.className}
-              style={{ fontFamily: 'cursive', color: '#d6ac66' }}
-            >
+          <h2
+  className={mali.className}
+  style={{
+    color: '#d6ac66',
+    fontWeight: 300,
+  }}
+>
               Are you yearning for a truly extraordinary and unforgettable experience? Look no further!
             </h2>
             <p>
@@ -221,16 +227,16 @@ export default function Home() {
               I look forward to meeting you.
             </p>
             <h3
-                className={playfair.className}
-                style={{ fontFamily: 'cursive', color: '#d6ac66', textAlign: 'right' }}>
+                className={mali.className}
+                style={{ fontWeight: 300, color: '#d6ac66', textAlign: 'right' }}>
                    Yours, Stella
               </h3>
           </div>
 
           <div data-aos="fade-left" style={{ textAlign: 'left' }}>
             <h2
-              className={playfair.className}
-              style={{ fontFamily: 'cursive', color: '#d6ac66' }}
+              className={mali.className}
+              style={{fontWeight: 300, color: '#d6ac66' }}
             >
              Donation
             </h2>
@@ -241,8 +247,8 @@ export default function Home() {
 
           <div data-aos="fade-up" style={{ textAlign: 'left' }}>
             <h2
-              className={playfair.className}
-              style={{ fontFamily: 'cursive', color: '#d6ac66' }}
+              className={mali.className}
+              style={{ fontWeight: 300, color: '#d6ac66' }}
             >
               Statistics
             </h2>
@@ -260,8 +266,8 @@ export default function Home() {
 
           <div data-aos="fade-up" style={{ gridColumn: '1 / -1', textAlign: 'left' }}>
             <h2
-              className={playfair.className}
-              style={{ fontFamily: 'cursive', color: '#d6ac66' }}
+              className={mali.className}
+              style={{ fontWeight: 300, color: '#d6ac66' }}
             >
               Contact Me
             </h2>

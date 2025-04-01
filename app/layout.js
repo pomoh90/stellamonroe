@@ -7,8 +7,8 @@ const roboto = Roboto({ subsets: ['latin'], weight: ['400', '700'] });
 const playfair = Playfair_Display({ subsets: ['latin'], weight: ['400', '700'] });
 
 export const metadata = {
-  title: 'Elite Escorts',
-  description: 'Exclusive Escort Service Landing Page',
+  title: 'Stella Monroe | Elite Escorts',
+  description: 'Exclusive Escort Service ',
 };
 
 export default function RootLayout({ children }) {
