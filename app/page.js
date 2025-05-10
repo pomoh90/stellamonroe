@@ -241,7 +241,7 @@ export default function Home() {
              Donation
             </h2>
             
-            <p>Inacll  $700</p> 
+            <p>Inacll  $800</p> 
             <p>Outcall $800 + Uber</p>
           </div>
 
